@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+<form>
+
+	<p>Register</p>
+
+	<label for="first_name">First Name:</label>
+	<input id = "first_name" type="text" placeholder="John">
+	<label for="last_name">Last Name:</label>
+	<input id = "last_name" type="text" placeholder="Smith">
+
+	<div>
+		<label for="male"> Male </label>
+		<input id = "male" type="radio" name="SexChoice" value = "MALE">
+		<label for="female"> Female </label>
+		<input id = "female" type="radio" name="SexChoice" value = "FEMALE">
+		<label for="other"> Other </label>
+		<input id = "other" type="radio" name="SexChoice" value = "OTHER">
+	</div>
+	<div>
+		<label for="e_mail">Email:</label>
+		<input id = "e_mail" type="email" placeholder="your e-mail" required="">
+		<label for="password">Password:</label>
+		<input id = "password" type="password" placeholder="your password" required="">
+	</div>	
+
+	<div>
+		<label>
+			Birthday
+			<select>
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>March</option>
+			</select>
+			<select>
+				<option>Day</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+			</select>
+			<select>
+				<option>Year</option>
+				<option>1999</option>
+				<option>2000</option>
+				<option>2001</option>
+			</select>
+		</label>
+	</div>
+	Month example
+    <input type="date" />
+</form>
+</body>
+</html>
