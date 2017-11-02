@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Test Forms </title>
+</head>
+<body>
+
+<h3>LOGIN</h3>
+
+<form action="http://wikipedia.org">
+	<input type="text" placeholder = "username" name="username">
+	<input type="password" placeholder = "your password" name="password">
+	<input type="submit"> 
+</form>
+
+<h3>alternative login</h3>
+<form action="http://wikipedia.org">
+	<label>
+		Username:
+		<input type="text" placeholder = "username">
+	</label>	
+	<label>
+		Password:
+		<input type="password" placeholder = "password">
+	</label>	
+	<input type="submit"> 
+</form>
+<!-- Different kind of lable coupling -->
+
+<h2>Different type of label coupling</h2>
+
+<form action="http://wikipedia.org">
+
+	<label for="username">	Username:</label>	
+	<input id="username" type = "text" placeholder = "username" required="">
+	
+	<label for="password">	Password:</label>	
+	<input id="password" type = "password" placeholder = "password" required="">
+	
+	<label for="e_mail">	E-mail:</label>	
+	<input id="e_mail" type = "email" placeholder = "email">
+
+	<input type="submit"> 
+</form>
+
+</body>
+</html>
