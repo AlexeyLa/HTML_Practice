@@ -1,13 +1,54 @@
+
+/*Element*/
 li {
 	border-style: solid;
 	border-width: 2 px
 	border-style: red;
 }
+/*class*/
+.highlight{
+	text-decoration: underline red;
+}
+/*id*/
 #fuck{
 	border-style: dotted;
 	border-width: 18 px
 	border-style: red;
 }
-.highlight{
-	text-decoration: underline red;
+/*Star*/
+/*select everything on the page*/
+* {
+	border: 1px solid black;
 }
+
+/*Descendent Selector*/
+/*everythin within li e.g. or nested */
+li a {
+	color: green;
+}
+
+/*Adjacent Selector*/
+
+h4 + ul {
+	border: 2px solid blue;
+}
+
+/*Attribute Selector*/
+
+a[href="http://wwww.google.com"]{
+	background: blue;
+	color: red;
+}
+
+/*nth of type*/
+
+ul:nth-of-type(2){
+	background: purple;
+}
+
+
+
+
+
+
+
