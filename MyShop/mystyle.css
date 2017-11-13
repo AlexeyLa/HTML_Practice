@@ -1,0 +1,21 @@
+@media only screen and (min-width : 481px) {
+    .row.equal-height {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+ body {
+ 	padding-top: 60px;
+ }
+ .jumbotron{
+ 	color:#60412D;
+ }
+ .navbar{
+ 	background-color: #EFAE61;
+ }
+ .navbar-inverse .navbar-nav>li>a {
+ 	color:white;
+ }
+ .navbar-inverse .navbar-brand> {
+ 	color:white;
+ }
