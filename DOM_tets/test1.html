@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my test</title>
+	<style type="text/css">
+		.big{
+			font-size: 100px;
+			color: orange;
+			border: "10px solid red";
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+<button id = "myButton" onclick="myFunction()"> push me</button>
+<p></p>
+<h1 id="myH">My title</h1>
+<p> Just a text string</p>
+
+<p id = "checkthis"> Another string</p>
+<!-- <script type="text/javascript">
+	var body = document.querySelector("body")
+	var isBlue = false;
+
+	setInterval(function()
+		{
+			if (isBlue){
+				body.style.background = "white";
+			} else {
+				body.style.background = "blue";
+			}
+			isBlue = !isBlue;
+		},1000);
+</script> -->
+
+<script>
+  function handler1() {
+    alert('Спасибо!');
+  };
+
+  function handler2() {
+    alert('Спасибо ещё раз!');
+  }
+  function handler3(){
+  	var tag = document.querySelector("p");
+  	tag.classList.toggle("big");
+
+  }
+  myButton.addEventListener("click", handler1); // Спасибо!
+  myButton.addEventListener("click", handler2); // Спасибо ещё раз!
+  myButton.addEventListener("click", handler3); // Спасибо ещё раз!
+</script>
+
+</body>
+</html>
