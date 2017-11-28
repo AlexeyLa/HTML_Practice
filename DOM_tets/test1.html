@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8"/>
 	<title>my test</title>
 	<style type="text/css">
 		.big{
@@ -15,12 +16,17 @@
 <body>
 
 
-<button id = "myButton" onclick="myFunction()"> push me</button>
+<button id = "myButton" > push me</button>
 <p></p>
 <h1 id="myH">My title</h1>
 <p> Just a text string</p>
 
 <p id = "checkthis"> Another string</p>
+
+<img src = "http://tonnel-ufo.ru/foto/images_stati/NATO_protiv_S300_3.jpg"><img>
+
+
+
 <!-- <script type="text/javascript">
 	var body = document.querySelector("body")
 	var isBlue = false;
@@ -38,20 +44,35 @@
 
 <script>
   function handler1() {
-    alert('Спасибо!');
+    alert('Thanks!');
   };
 
   function handler2() {
-    alert('Спасибо ещё раз!');
+    alert('Thanks again!');
   }
   function handler3(){
   	var tag = document.querySelector("p");
   	tag.classList.toggle("big");
 
   }
-  myButton.addEventListener("click", handler1); // Спасибо!
-  myButton.addEventListener("click", handler2); // Спасибо ещё раз!
-  myButton.addEventListener("click", handler3); // Спасибо ещё раз!
+  function handler4(){
+  	var p = document.getElementsByTagName("p")[1]
+  	console.log(p);
+  	console.log(p.textContent);
+  }
+   function handler5(){
+  	var img = document.getElementsByTagName("img")[0]
+  	console.log(img.getAttribute("src"));
+  	img.setAttribute("src","http://4.bp.blogspot.com/-SMhkzY1j_4s/UiHYZ3_geMI/AAAAAAAA8UY/tyUqHmHLZfg/w1200-h630-p-k-no-nu/S-300PMU2_complex.jpg");
+
+  }
+
+
+  // myButton.addEventListener("click", handler1); // Спасибо!
+  // myButton.addEventListener("click", handler2); // Спасибо ещё раз!
+  // myButton.addEventListener("click", handler3); // Спасибо ещё раз!
+  myButton.addEventListener("click", handler4); // Спасибо ещё раз!
+  myButton.addEventListener("click", handler5); // Спасибо ещё раз!
 </script>
 
 </body>
